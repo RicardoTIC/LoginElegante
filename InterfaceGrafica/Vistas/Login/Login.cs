@@ -54,7 +54,9 @@ namespace InterfaceGrafica
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("No se establecio la conexion " + ex.Message);
+                    lblConexion.Text = "Error connection";
+                    lblConexion.ForeColor = Color.Red;
+                    MessageBox.Show("No se establecio la conexion " + ex.Message,"Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
                 }
 
             }
@@ -75,7 +77,10 @@ namespace InterfaceGrafica
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("No se establecio la conexion " + ex.Message);
+                    lblConexion.Text = "Error connection";
+                    lblConexion.ForeColor = Color.Red;
+                    MessageBox.Show("No se establecio la conexion " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
                 }
             }
 
